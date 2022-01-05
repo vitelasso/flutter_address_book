@@ -1,4 +1,3 @@
-import 'package:about_you/app_router.dart';
 import 'package:about_you/app_router.gr.dart';
 import 'package:flutter/material.dart';
 

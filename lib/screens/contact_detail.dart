@@ -12,7 +12,6 @@ class ContactDetailScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.blue,
         title: Text(contactName),
-        //centerTitle: true,
       ),
       body: Center(child: Text(contactName)),
     );
