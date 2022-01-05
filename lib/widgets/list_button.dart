@@ -1,3 +1,4 @@
+import 'package:about_you/utils/constants.dart';
 import 'package:flutter/material.dart';
 
 class ListButton extends StatelessWidget {
@@ -7,9 +8,9 @@ class ListButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton(
       onPressed: () => {},
-      child: const Text('FlatButton', style: TextStyle(fontSize: 24)),
+      child: const Text('TextButton', style: listButtonTextStyle),
       style: TextButton.styleFrom(
-          primary: Colors.white, backgroundColor: Colors.blue),
+          primary: listButtonTextColor, backgroundColor: primaryColor),
     );
   }
 }

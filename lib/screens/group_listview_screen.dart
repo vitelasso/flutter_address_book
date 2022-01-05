@@ -33,7 +33,6 @@ class _GroupListScreenState extends State<GroupListScreen> {
   }
 
   void _onFocusChange() {
-    debugPrint("Focus: ${_focus.hasFocus.toString()}");
     setState(() {
       _widgetsVisible = _focus.hasFocus ? false : true;
     });

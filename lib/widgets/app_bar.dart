@@ -1,3 +1,4 @@
+import 'package:about_you/utils/constants.dart';
 import 'package:flutter/material.dart';
 
 class AddressBookAppBar extends StatelessWidget {
@@ -7,13 +8,13 @@ class AddressBookAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return SliverAppBar(
       backgroundColor: Colors.blue,
-      expandedHeight: 150,
+      expandedHeight: appBarExtendedHeight,
       floating: false,
-      elevation: 0,
+      elevation: appBarElevation,
       flexibleSpace: LayoutBuilder(
           builder: (BuildContext context, BoxConstraints constraints) {
         return const FlexibleSpaceBar(
-          title: Text('Address Book', textScaleFactor: 1),
+          title: Text('Address Book', textScaleFactor: appBarTextScaleFactor),
           collapseMode: CollapseMode.parallax,
         );
       }),

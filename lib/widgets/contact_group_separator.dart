@@ -1,3 +1,4 @@
+import 'package:about_you/utils/constants.dart';
 import 'package:flutter/material.dart';
 
 class ContactGroupSeparator extends StatelessWidget {
@@ -9,11 +10,11 @@ class ContactGroupSeparator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(contactGroupSeparatorPadding),
       child: Text(
         contactName,
         textAlign: TextAlign.start,
-        style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+        style: contactGroupSeparatorTextStyle,
       ),
     );
   }
