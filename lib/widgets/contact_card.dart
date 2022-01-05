@@ -17,10 +17,11 @@ class ContactCard extends StatelessWidget {
               .push(ContactDetailRoute(contactName: contactName));
         },
         child: ListTile(
-          contentPadding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
-          leading: Icon(Icons.account_circle),
+          contentPadding:
+              const EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
+          leading: const Icon(Icons.account_circle),
           title: Text(contactName),
-          trailing: Icon(Icons.arrow_forward),
+          trailing: const Icon(Icons.arrow_forward),
         ),
       ),
     );

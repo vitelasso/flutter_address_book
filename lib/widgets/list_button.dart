@@ -7,7 +7,7 @@ class ListButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton(
       onPressed: () => {},
-      child: Text('FlatButton', style: TextStyle(fontSize: 24)),
+      child: const Text('FlatButton', style: TextStyle(fontSize: 24)),
       style: TextButton.styleFrom(
           primary: Colors.white, backgroundColor: Colors.blue),
     );
